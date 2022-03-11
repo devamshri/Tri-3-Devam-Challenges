@@ -1,3 +1,4 @@
+// My original way of solving the challenges
 package com.devamchallenges;
 import java.util.Scanner;
 

@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class IntByReference {
     private int value;
-
+// Different functions.
     public IntByReference(int v){
         value = v;
     }
@@ -39,10 +39,12 @@ public class IntByReference {
     }
 
     public static void main(String[] ags) {
+// Tester methods
         IntByReference.swapper(21, 16);
         IntByReference.swapper(16, 21);
         IntByReference.swapper(16, -1);
 
+//        This is for the input based method for IntByReference
         Scanner scan = new Scanner(System.in);
         String input = scan.nextLine();
         System.out.println("Enter 1st number:");

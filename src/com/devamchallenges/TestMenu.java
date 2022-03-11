@@ -1,3 +1,4 @@
+// Based on the actual way Mort wanted us to do the Challenge 1
 package com.devamchallenges;
 
 import java.util.HashMap;
@@ -27,6 +28,7 @@ public class TestMenu {
 
         Map<Integer, TestMenu> menu = new HashMap<>();
 
+        // This is for setting up the input based menu for
         menu.put(1, new TestMenu("Matrix", () -> Matrix.main(null) ) );
         menu.put(2, new TestMenu("Calculator", () -> IntByReference.main(null) ) );
 
