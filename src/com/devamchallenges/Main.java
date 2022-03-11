@@ -1,4 +1,4 @@
-//package com.company.IntByReference;
+//package com.devamchallenges.IntByReference;
 
 public class Main {
 

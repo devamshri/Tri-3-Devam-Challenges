@@ -1,4 +1,5 @@
-package com.company;
+package com.devamchallenges;
+import java.util.Scanner;
 
 public class IntByReference {
     private int value;
@@ -42,6 +43,13 @@ public class IntByReference {
         IntByReference.swapper(16, 21);
         IntByReference.swapper(16, -1);
 
+        Scanner scan = new Scanner(System.in);
+        String input = scan.nextLine();
+        System.out.println("Enter 1st number:");
+        int n1 = Integer.parseInt(scan.nextLine());
+        System.out.println("Enter 2nd number:");
+        int n2 = Integer.parseInt(scan.nextLine());
+        IntByReference.swapper(n1, n2);
 
     }
 }
