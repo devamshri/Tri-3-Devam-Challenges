@@ -25,7 +25,7 @@ Topics I need to focus on:
 ## Data Structures Work
 
 ### [TT0](https://github.com/devamshri/Tri_3_Devam_Challenges/issues/1): 
-Links to Review Ticket for this Week: [Review Ticket](https://github.com/devamshri/Tri_3_Devam_Challenges/issues/1)
+#### Links to Review Ticket for this Week: [Review Ticket](https://github.com/devamshri/Tri_3_Devam_Challenges/issues/1)
 Links to Github for Code: [Challenge 1: menu](https://https://github.com/devamshri/Tri_3_Devam_Challenges/blob/main/src/com/devamchallenges/TestMenu.java)
 **KEY LEARNINGS**: using the HashMap to with a **Runnable action** so that the main file of each challenge can be run. This was probably the most important, key part to figuring out this challenge. This also helps keep all the challenges organized so that the menu can iterate through the HashMap.
 ```
