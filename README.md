@@ -1,3 +1,4 @@
+{% include navigation.html %}
 # Tri_3_Devam_Challenges
 
 ## Navigating Notes and Plans for Each Tech Talk
