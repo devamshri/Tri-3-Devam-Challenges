@@ -1,5 +1,5 @@
 {% include navigation.html %}
-# Tri_3_Devam_Challenges
+# Devam's Computer Science Challenges
 
 ## Navigating Notes and Plans for Each Tech Talk
 In each Tech Talk, I will prepare questions and review the Tech Talk material beforehand. I will take notes on important key concepts for each TT. 
