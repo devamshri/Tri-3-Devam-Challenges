@@ -38,6 +38,19 @@ public class TestMenu {
         }
 
         int input = sc.nextInt();
+
+//        try {
+//            //according to user input, return the method at the Map's index
+//            TestMenu m = TestMenu.get(input);
+//            //run action
+//            m.getAction().run();
+//            System.out.println("");
+//
+//        } catch (Exception e){
+//            //exception for if user puts something not applicable
+//            System.out.println("Something went wrong. Please try again. \n");
+//        }
+
         TestMenu m = menu.get(input);
         m.getAction().run();
     }
