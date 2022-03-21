@@ -33,6 +33,7 @@ A normal linked list will only link to the next node, however a doubly linked li
 - arraylist is a cobination of a queue and an array list
 - Insertian and deletion is very efficient compared to an array
 - Doubly linked lists each element is linked to its next and previous element
+- Adding to a queue is simple: State an object and quantify a value towards it for it to be sorted (adding object John to Person: Person now has object John in it)
 
 ### challenge 1 (Setting up Linked List and Testing it out)
 ```java
