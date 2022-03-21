@@ -1,4 +1,4 @@
-package com.devamchallenges.linkedlist2;
+package com.devamchallenges.tt1;
 
 public class LinkedList<T> {
     private T data;

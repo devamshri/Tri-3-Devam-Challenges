@@ -1,4 +1,4 @@
-package com.devamchallenges.linkedlist2;
+package com.devamchallenges.tt1;
 import java.util.Iterator;
 
 public class Queue<T> implements Iterable<T> {
