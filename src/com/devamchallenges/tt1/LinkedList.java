@@ -40,4 +40,10 @@ public class LinkedList<T> {
     public LinkedList<T> getNext() {
         return this.nextNode;
     }
+
+    public static void main(String[] args) {
+        Object[] words = new String[]{"seven", "slimy", "snakes", "sallying", "slowly", "slithered", "southward"};
+        QueueManager qWords = new QueueManager("Words", words);
+
+    }
 }

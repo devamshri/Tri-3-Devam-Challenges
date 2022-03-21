@@ -38,8 +38,6 @@ public class MergingQueues {
 
 
     public static void main(String[] args){
-        //Object[] numbers1 = new Integer[]{1, 4, 5, 8};
-        //QueueManager qNums1 = new QueueManager("num1", numbers1);
 
         //creating queue1
         Queue qNums1 = new PriorityQueue<Integer>();

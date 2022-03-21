@@ -3,7 +3,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
 
-public class reverseQueues {
+public class twoQueue {
 
     public static void reverse(Queue<Integer> initQueue){
         /**
