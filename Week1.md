@@ -1,6 +1,6 @@
 {% include navigation.html %}
 ### [TT1](https://github.com/devamshri/Tri_3_Devam_Challenges/issues/1):
-#### Links to Review Ticket for this Week: [Review Ticket](https://github.com/devamshri/Tri_3_Devam_Challenges/issues/1)
+#### Links to Review Ticket for this Week: [Review Ticket](https://github.com/devamshri/Tri-3-Devam-Challenges/issues/2)
 
 [Run Time](https://replit.com/@D3vIs4G0d/Tri3DevamChallenges#src/com/devamchallenges/tt1)
 
