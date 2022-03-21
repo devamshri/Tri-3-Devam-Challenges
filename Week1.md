@@ -10,7 +10,31 @@
 3. [challenge 3](https://github.com/devamshri/Tri-3-Devam-Challenges/blob/main/src/com/devamchallenges/tt1/twoQueue.java)
 4. [Queue](https://github.com/devamshri/Tri-3-Devam-Challenges/blob/main/src/com/devamchallenges/tt1/Queue.java)
 
-## challenge 1
+## Notes for TT1
+[3/15 Linked Lists Notes](https://github.com/nighthawkcoders/nighthawk_csa/wiki/Tri-3:-Tech-Talk-1:-Linked-Lists-Part-2)
+> **_Linked Lists:_**  linked lists are lists that are linked in one direction though variables within each object within the list.
+**head** is the first node of the linked list
+**tail** is the last node of the linked list
+the head of the linked list will link to the next node and so on. The last node (tail) will link to null since there isn't anything else after it.
+> **_Doubly Linked Lists:_** these are liked linked lists but the nodes are also linked backwards, towards their previous node.
+A normal linked list will only link to the next node, however a doubly linked lists's node will link to both it's next node and it's previous node.
+> **_The Java Generic T_** is a generic type of perameter for the class it is added to. It will generally appear at the end of the class name with < >.
+- Linked lists are datastructures
+- They have lists
+- head pointer: beginning of list (always slimy in this case)
+- tail pointer: end of list (southward after southward is added)
+-deque --> remove head pointer
+- Stack- will use push and pop
+- deque and push to reverse order of stack
+- a que has a linked list --> que will have date
+- previous node is node previous
+- next node is null until it is added
+- link list needs to be resized periodically and it needs
+- arraylist is a cobination of a queue and an array list
+- Insertian and deletion is very efficient compared to an array
+- Doubly linked lists each element is linked to its next and previous element
+
+### challenge 1 (Setting up Linked List and Testing it out)
 ```java
 package com.devamchallenges.tt1;
 
@@ -63,7 +87,7 @@ public class LinkedList<T> {
 }
 
 ```
-## challenge 2
+### challenge 2 (Combining/Merging)
 ```java
 package com.devamchallenges.tt1;
 import java.util.LinkedList;
@@ -115,7 +139,7 @@ public class twoQueue {
 
 
 
-## challenge 3
+### challenge 3 (Build Stack and Reverse)
 ```java
 package com.devamchallenges.tt1;
 import java.util.PriorityQueue;
