@@ -1,7 +1,7 @@
 {% include navigation.html %}
 # Challenges By Week
-# Data Structures
 
-| Week | Code Snippets on Problems Solution | Links to GitHub Code Snippets | Replit for Runtime| 
+| Week | Week Notes | Links to GitHub Code Snippets | Replit for Runtime| 
 | ----- | ----- | ----- | ----- |
-|     0|[Linked Here](https://github.com/ArnavPalkhiwala/APCSA-Tri3-Individual/blob/main/abstractClass.java)| [Linked here for challenge 2 (swap)](https://github.com/ArnavPalkhiwala/APCSA-Tri3-Individual/blob/main/Swap.java#L5-L12)| [Linked here](https://replit.com/@ArnavPalkhiwala/APCSA-Tri3-Individual#.replit)
+|     0|[Linked Here]()| [IntByReference](https://github.com/devamshri/Tri-3-Devam-Challenges/tree/main/src/com/devamchallenges)| [Linked here](https://replit.com/@D3vIs4G0d/Tri3DevamChallenges#src/com/devamchallenges/IntByReference.java)
+|     1|[Linked Here]()| [Linked Lists](https://github.com/devamshri/Tri-3-Devam-Challenges/tree/main/src/com/devamchallenges/linkedlist2)| [Linked here](https://replit.com/@D3vIs4G0d/Tri3DevamChallenges#src/com/devamchallenges/linkedlist2/LinkedList.java)
