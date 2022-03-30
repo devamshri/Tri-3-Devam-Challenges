@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 
-public class Calculator {
+public class DevamCalculator {
     // Key instance variables
     private final String expression;
     private ArrayList<String> tokens;
