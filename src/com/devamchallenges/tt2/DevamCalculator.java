@@ -109,12 +109,12 @@ public class DevamCalculator {
         result = (Double) calculation.pop();
     }
 
-    public Calculator(String expression) {
+    public DevamCalculator(String expression) {
         // original input
         this.expression = expression;
 
         // parse expression into terms
-        this.termTokenizer();
+        this.Tokens();
 
         // place terms into reverse polish notation
         this.tokensToReversePolishNotation();
@@ -124,7 +124,7 @@ public class DevamCalculator {
     }
 
     // Term Tokenizer takes original expression and converts it to ArrayList of tokens
-    private void termTokenizer() {
+    private void Tokens() {
         // contains final list of tokens
         this.tokens = new ArrayList<>();
 
@@ -228,23 +228,23 @@ public class DevamCalculator {
     }
 
     public static void main(String[] args){
-        Calculator simpleMath = new Calculator("100 + 200  * 3");
+        DevamCalculator simpleMath = new DevamCalculator("100 + 200  * 3");
         System.out.println("Simple Math\n" + simpleMath);
 
-        Calculator parenthesisMath = new Calculator("(100 + 200)  * 3");
+        DevamCalculator parenthesisMath = new DevamCalculator("(100 + 200)  * 3");
         System.out.println("Parenthesis Math\n" + parenthesisMath);
 
-        Calculator allMath = new Calculator("200 % 300 + 5 + 300 / 200 + 1 * 100");
+        DevamCalculator allMath = new DevamCalculator("200 % 300 + 5 + 300 / 200 + 1 * 100");
         System.out.println("All Math\n" + allMath);
 
-        Calculator allMath2 = new Calculator("200 % (300 + 5 + 300) / 200 + 1 * 100");
+        DevamCalculator allMath2 = new DevamCalculator("200 % (300 + 5 + 300) / 200 + 1 * 100");
         System.out.println("All Math2\n" + allMath2);
 
-        Calculator allMath3 = new Calculator("200 % (300 + 5 + 300) / 200 + 1 * 100 + 5 ^ 2");
+        DevamCalculator allMath3 = new DevamCalculator("200 % (300 + 5 + 300) / 200 + 1 * 100 + 5 ^ 2");
         System.out.println("All Math3\n" + allMath3);
 
 // Basically just setting up the sqrt function stuffies bc why not try extra credit
-        Calculator sqrt = new Calculator("200 % (300 + 5 + 300) / 200 + 1 * 100 + 5 ^ 2 + sqrt (2*12.5) + 2");
+        DevamCalculator sqrt = new DevamCalculator("200 % (300 + 5 + 300) / 200 + 1 * 100 + 5 ^ 2 + sqrt (2*12.5) + 2");
         System.out.println("All Math3\n" + sqrt);
     }
 }
