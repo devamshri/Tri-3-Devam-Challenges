@@ -5,7 +5,7 @@
 [Run Time](https://replit.com/@D3vIs4G0d/Tri3DevamChallenges#src/com/devamchallenges/tt2)
 
 ## GitHub Links
-1. [challenge 1 and 2 and SQRT thing](https://github.com/devamshri/Tri-3-Devam-Challenges/blob/main/src/com/devamchallenges/tt2/Calculator.java)
+1. [challenge 1 and 2 and SQRT thing](https://github.com/devamshri/Tri-3-Devam-Challenges/blob/main/src/com/devamchallenges/tt2/DevamCalculator.java)
 
 
 ## Notes for TT2
