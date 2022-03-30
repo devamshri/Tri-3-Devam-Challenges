@@ -14,6 +14,7 @@ public class DevamCalculator {
     private final Map<String, Integer> OPERATORS = new HashMap<>();
     {
         // Map<"token", precedence>
+//        Set up Operaters for the specific functions
         OPERATORS.put("*", 3);
         OPERATORS.put("/", 3);
         OPERATORS.put("%", 3);
@@ -33,6 +34,7 @@ public class DevamCalculator {
 
 
     // Print the expression, terms, and result
+//    The toString to help get the formatting for prints
     public String toString() {
         return ("Original expression: " + this.expression + "\n" +
                 "Tokenized expression: " + this.tokens.toString() + "\n" +
