@@ -236,7 +236,7 @@ public class DevamCalculator {
         DevamCalculator parenthesisMath = new DevamCalculator("(100 + 200)  * 3");
         System.out.println("Parenthesis Math\n" + parenthesisMath);
 
-        DevamCalculator allMath = new DevamCalculator("200 % 300 + 5 + 300 / 200 + 1 * 100");
+        DevamCalculator allMath = new DevamCalculator("400 % 350 + 10 + 300 / 500 + 1 * 100");
         System.out.println("All Math\n" + allMath);
 
         DevamCalculator allMath2 = new DevamCalculator("200 % (300 + 5 + 300) / 200 + 1 * 100");
@@ -248,5 +248,6 @@ public class DevamCalculator {
 // Basically just setting up the sqrt function stuffies bc why not try extra credit
         DevamCalculator sqrt = new DevamCalculator("200 % (300 + 5 + 300) / 200 + 1 * 100 + 5 ^ 2 + sqrt (2*12.5) + 2");
         System.out.println("All Math3\n" + sqrt);
+
     }
 }

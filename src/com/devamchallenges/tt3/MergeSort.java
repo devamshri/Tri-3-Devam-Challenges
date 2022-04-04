@@ -1,18 +1,20 @@
-package com.devamchallenges.tt1;
+package com.devamchallenges.tt3;
 import java.util.ArrayList;
 import java.time.Duration;
 import java.time.Instant;
 
 public class MergeSort {
     private ArrayList<Integer> inputArray;
-    private final Duration timeElapsed;
+    private Duration timeElapsed;
 
     public ArrayList<Integer> getSortedArray() {
         return inputArray;
     }
 
     public MergeSort(ArrayList<Integer> inputArray){
+
         this.inputArray = inputArray;
+
     }
 
     public void sortGivenArray(){
@@ -33,7 +35,7 @@ public class MergeSort {
     }
 
     public void merger(int startIndex,int midIndex,int endIndex){
-        Instant start = Instant.now();  // time capture -- start
+
         //Below is the mergedarray that will be sorted array Array[i-midIndex] , Array[(midIndex+1)-endIndex]
         ArrayList<Integer> mergedSortedArray = new ArrayList<Integer>();
 
@@ -68,36 +70,42 @@ public class MergeSort {
             inputArray.set(j, mergedSortedArray.get(i++));
             j++;
         }
-        Instant end = Instant.now();    // time capture -- end
-        this.timeElapsed = Duration.between(start, end);
+
     }
-    public int getTimeElapsed() {
-        return timeElapsed.getNano();
-    }
+
     public static void main(String[] args) {
+        for (int i = 0; i < 12; i++) {
+            int time = 0;
+            ArrayList<Integer> unsortedArray = new ArrayList<Integer>();
+            final Duration timeElapsed;
+            for (int j = 0; j < 5000; j++) {
+                unsortedArray.add((int)(Math.random() * (5000)));
+            }
 
-        ArrayList<Integer> unsortedArray = new ArrayList<Integer>();
 
-        unsortedArray.add(8);
-        unsortedArray.add(7);
-        unsortedArray.add(6);
-        unsortedArray.add(5);
-        unsortedArray.add(4);
-        unsortedArray.add(0);
-        unsortedArray.add(2);
-        MergeSort ms = new MergeSort(unsortedArray);
+            MergeSort ms = new MergeSort(unsortedArray);
 
-        System.out.println("---------Initial Unsorted Array---------");
-        for(int i:ms.getSortedArray()){
-            System.out.print(i+" ");
+            System.out.println("---------Initial Unsorted Array---------");
+            for(int j:ms.getSortedArray()){
+                System.out.print(j+" ");
+            }
+
+            Instant start = Instant.now();  // time capture -- start
+            ms.sortGivenArray();
+            Instant end = Instant.now();    // time capture -- end
+            timeElapsed = Duration.between(start, end);
+//        nanoTime timeElapsed.getNano();
+
+            System.out.println("\n------------Sorted Array------------");
+            for(int j:ms.getSortedArray()){
+                System.out.print(j+" ");
+            }
+            System.out.println();
+            System.out.println("Nanoseconds: " + timeElapsed.getNano());
+            time += timeElapsed.getNano();
+            System.out.println("Total Nanoseconds: " + time );
+            System.out.println("Total Seconds: " + time /1000000000.0);
         }
 
-
-        ms.sortGivenArray();
-
-        System.out.println("\n------------Sorted Array------------");
-        for(int i:ms.getSortedArray()){
-            System.out.print(i+" ");
-        }
     }
 }
