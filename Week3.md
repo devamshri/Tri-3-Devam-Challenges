@@ -68,7 +68,7 @@ public class BubbleSort {
 }
 ```
   
-  ## Selection Sort
+## Selection Sort
   - in the unsorted section, the minimum element is found and put at the beginning
   - two subarrays: one which is already sorted, remaning array which is unsorted
   - Time complexity; O(n^2) because there are two nested for loops
@@ -141,7 +141,7 @@ public class SelectionSort
 }
 ```
   
-  ## Insertion Sort 
+## Insertion Sort 
   - array is split into sorted and unsorted part
   - one at a time, values form unsorted part are put in the correct location of the sorted array
   - Time complexity is O(n^2) because there is 1 for loop and 1 while loop 
@@ -210,7 +210,7 @@ public class InsertionSort {
 
 ```
   
-  ## Merge Sort
+## Merge Sort
   - a Divide and Conquer Algorithm
   - array is repeatedly divided, sorted, and then later merged
   - useful 
