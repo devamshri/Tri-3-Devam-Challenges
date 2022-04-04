@@ -1,10 +1,10 @@
 {% include navigation.html %}
 # Sorts
-- This week I learned how to use a variety of sort algorithms
-- I also implemented sorting in my custom implementation of a queue
+- I also implemented sorting in my custom implementation of a Linked List
 
 ## Bubble Sort
 - simplest sorting algorithm
+- Takes the most time to run
 - repeatedly swaps adjacent elements if in wrong order
 - Time complexity of O(n^2) because two for loops go through entire array
 
@@ -145,6 +145,7 @@ public class SelectionSort
   - array is split into sorted and unsorted part
   - one at a time, values form unsorted part are put in the correct location of the sorted array
   - Time complexity is O(n^2) because there is 1 for loop and 1 while loop 
+  - The second most efficient
 
 ``` java
 package com.devamchallenges.tt3;
@@ -214,6 +215,7 @@ public class InsertionSort {
   - a Divide and Conquer Algorithm
   - array is repeatedly divided, sorted, and then later merged
   - useful 
+  - Most efficient of all the algorithms
 
 ``` java
 package com.devamchallenges.tt3;
