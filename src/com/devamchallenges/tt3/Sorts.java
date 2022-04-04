@@ -1,4 +1,4 @@
-package com.devamchallenges.tt1;
+package com.devamchallenges.tt3;
 
 import java.time.Duration;
 import java.time.Instant;
