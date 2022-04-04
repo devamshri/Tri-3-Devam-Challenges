@@ -7,7 +7,9 @@
 - simplest sorting algorithm
 - repeatedly swaps adjacent elements if in wrong order
 - Time complexity of O(n^2) because two for loops go through entire array
+
 ``` java
+
 package com.devamchallenges.tt3;
 
 import java.time.Duration;
@@ -63,18 +65,16 @@ public class BubbleSort {
             }
 
         }
-
 }
-
-  ```
+```
   
   ## Selection Sort
   - in the unsorted section, the minimum element is found and put at the beginning
   - two subarrays: one which is already sorted, remaning array which is unsorted
   - Time complexity; O(n^2) because there are two nested for loops
   
-  ``` java
-  package com.devamchallenges.tt3;
+``` java
+package com.devamchallenges.tt3;
 
 import java.time.Duration;
 import java.time.Instant;
@@ -139,8 +139,7 @@ public class SelectionSort
 
     }
 }
-
-  ```
+```
   
   ## Insertion Sort 
   - array is split into sorted and unsorted part
@@ -209,7 +208,7 @@ public class InsertionSort {
     }
 }
 
-  ```
+```
   
   ## Merge Sort
   - a Divide and Conquer Algorithm
