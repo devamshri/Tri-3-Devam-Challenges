@@ -4,7 +4,7 @@
 - My Partner for crossover was Christopher Dioriu
 
 ## Crossover Code
-- Link to Partner's Repository
+- [Link to Partner's Repository](https://github.com/ChristopherDuroiu/DataStructures2Tri3/blob/main/twoQueue.java)
 - I simply just added a new way to Queue, which is the twoQueue algorithm below, which reverses the orginal given queue
 - It conversts from Queue to a stack, then 
 
