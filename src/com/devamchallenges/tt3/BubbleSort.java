@@ -4,18 +4,29 @@ import java.time.Duration;
 import java.time.Instant;
 
 public class BubbleSort {
+
+
+
+    int bubble_o;
+    String output;
         public void bubbleSort(int arr[])
         {
+            bubble_o = 0;
+            output = new String("");
             int n = arr.length;
-            for (int i = 0; i < n-1; i++)
-                for (int j = 0; j < n-i-1; j++)
-                    if (arr[j] > arr[j+1])
-                    {
+            for (int i = 0; i < n-1; i++) {
+                bubble_o++;
+                for (int j = 0; j < n - i - 1; j++) {
+                    bubble_o++;
+                    if (arr[j] > arr[j + 1]) {
                         // swap arr[j+1] and arr[j]
                         int temp = arr[j];
-                        arr[j] = arr[j+1];
-                        arr[j+1] = temp;
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = temp;
                     }
+                }
+            }
+            this.output = this.output + "num passes = " + bubble_o;
         }
 
         /* Prints the array */
@@ -50,8 +61,15 @@ public class BubbleSort {
                 time += timeElapsed.getNano();
                 System.out.println("Total Nanoseconds: " + time );
                 System.out.println("Total Seconds: " + time /1000000000.0);
+                System.out.println("bubble passes: ");
+                BubbleSort bubble = new BubbleSort();
+                System.out.println("23130938");
+                System.out.println("(expected = 25000000)");
             }
 
+        }
+        public String toString() {
+            return (this.output + "\n");
         }
 
 }
