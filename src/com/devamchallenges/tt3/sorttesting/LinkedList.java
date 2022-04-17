@@ -200,6 +200,7 @@ public class LinkedList<T> {
         }
         return min;
     }
+    // Make a function or method that can compare different types of data structures.
     public static void sortlinkedlistmenu() {
         int[] numbers = new int[]{64,25,12,22,11};
 
