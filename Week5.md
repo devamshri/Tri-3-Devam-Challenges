@@ -26,7 +26,7 @@
 
 ### Didn't have time for questions 35-39
 
-## FRQ (I was out of town and could only do 2 of them)
+## FRQ (I was out of town and could only do 2 of them. Final Score: 25/36)
 
 ### Question 1 (DiverseArray)
 
