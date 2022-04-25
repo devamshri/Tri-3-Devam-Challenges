@@ -4,71 +4,95 @@
 - This week, we were responsible for taking part in the 2015 AP Computer Science A Practice Exam.
 
 ## Multiple Choice (Score: 30/39, but didn't have time for last 5)
-- [Link to Partner's Repository](https://github.com/ChristopherDuroiu/DataStructures2Tri3/blob/main/twoQueue.java)
-- I simply just added a new way to Queue, which is the twoQueue algorithm below, which reverses the orginal given queue
-- It conversts from Queue to a stack, then 
+### Question 22:
+![image](https://media.discordapp.net/attachments/750110972420685825/966380650401783868/unknown.png?width=719&height=351)
+- 2D Arrays
+- Why I got this wrong: My answer would 100% Error.
+
+### Question 26
+![image](https://media.discordapp.net/attachments/750110972420685825/968176663236063343/unknown.png?width=444&height=499)
+- Topic: Writing Methods
+- Why I got this wrong: This was some horrific code writen by CollegeBoard but I should have noticed that since the function is a static, the location of the value changes, but not the actual value
+
+### Question 27
+![image](https://media.discordapp.net/attachments/750110972420685825/968177006355312671/unknown.png?width=473&height=499)
+- Topic: Arrays and Sorting
+- Why I got it wrong: I noticed that this was a selection sort quite early, but forgot that the 1 and 6 would swap with each other, causing the mistake.
+
+### Question 31
+![image](https://media.discordapp.net/attachments/750110972420685825/968177198798368808/unknown.png?width=525&height=498)
+- Topic: 2D Arrays
+- Why I got it wrong: I actually was confused with the functionality of the code other than that of the front row
+
+### Didn't have time for questions 35-39
+
+## FRQ (I was out of town and could only do 2 of them)
+
+### Question 1 (DiverseArray)
 
 ``` java
-
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Stack;
-import java.time.Duration;
-import java.time.Instant;
-
-public class twoQueue {
-
-    public static void reverse(Queue<Integer> initQueue){
-        /**
-         * In order to reverse the Queue into a stack, you need to make a temporary/empty stack
-         * Then, reverse the queue order by popping the elements from the stack and put the elements into the queue into the stack
-         * Push the elements back into the Queue & print elements in the queue
-         */
-        Stack<Integer> temp = new Stack<>(); //creates a temporary stack
-
-        //pushes element from queue to stack
-        while(!initQueue.isEmpty()){
-            temp.push(initQueue.poll());
+public class DiverseArray {
+    public static int arraySum(int[] arr) {
+        int count = 0;
+        for (int i = 0; i < arr.length; i++) {
+            count += arr[i];
         }
-
-        //pop elements from stack to Queue
-        while(!temp.isEmpty())
-        {
-            initQueue.add(temp.pop());
-        }
-
-        //print values from queue
-        for(Integer value2: initQueue) {
-            System.out.print(value2 + " -> ");
-        }
-        System.out.print("nil");
-
-
+        return count;
     }
 
-    public static void main(String[] args){
-        // Measure time it takes for reverse queue to run
-        int time = 0;
-        Queue<Integer> queue1 = new LinkedList<>();
-        final Duration timeElapsed;
-        Instant start = Instant.now();  // time capture -- start
-        // Add 100 elements to queue for reversing
-        for (int i = 0; i < 100; i++) {
-            queue1.add(i);
+    public static int[] rowSums(int[][] arr2D) {
+        int[] arr = new int[arr2D.length];
+        int rowCount=0;
+        for (int[] i : arr2D) {
+            arr[rowCount] = arraySum(i);
+            rowCount++;
         }
+        return arr;
+    }
 
-        System.out.println("Initial Queue: "+ queue1);
+    public static boolean isDiverse(int[][] arr2D) {
+        int[] arr = rowSums(arr2D);
+        for (int i = 0; i < arr.length; i++) {
+            for (int j=i+1; j < arr.length; j++) {
+                if (arr[i]==arr[j]) {
+                    return false;
+                }
+            }
 
-        System.out.print("Reverse Queue: ");
-
-        reverse(queue1);
-        Instant end = Instant.now();    // time capture -- end
-        timeElapsed = Duration.between(start, end);
-        System.out.println();
-        System.out.println("Nanoseconds: " + timeElapsed.getNano());
-        time += timeElapsed.getNano();
-        System.out.println("Total Nanoseconds: " + time );
-        System.out.println("Total Seconds: " + time /1000000000.0);
+        }
+        return true;
     }
 }
+```
+
+### Question 2 (HiddenWord):
+
+``` java
+public class HiddenWord {
+
+    private String word;
+
+    public HiddenWord(String guessedWord) {
+        word = guessedWord;
+    }
+
+    public String getHint(String guess) {
+        String preHint = "";
+
+        for (int i = 0; i < guess.length(); i++) {
+            if (guess.substring(i, i+1).equals(word.substring(i, i+1))) {
+                preHint += guess.substring(i, i+1);
+            }
+            else if (word.indexOf(guess.substring(i, i+1)) != -1) {
+                preHint += "+";
+            }
+            else {
+                preHint += "*";
+            }
+        }
+        return preHint;
+    }
+}
+
+
 ```
